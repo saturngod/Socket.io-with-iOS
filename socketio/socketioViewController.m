@@ -8,6 +8,9 @@
 
 #import "socketioViewController.h"
 #import "SBJson.h"
+
+#define SOCKET @"192.168.1.200"
+#define SOCKET_PORT 3000
 @implementation socketioViewController
 @synthesize socektio;
 @synthesize txtview,txtfield;
@@ -32,7 +35,7 @@
 {
     [super viewDidLoad];
     socektio = [[SocketIO alloc] initWithDelegate:self];
-    [socektio connectToHost:@"192.168.1.86" onPort:3000];
+    [socektio connectToHost:SOCKET onPort:SOCKET_PORT];
 }
 
 

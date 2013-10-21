@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56D4C2F1814E221007C35B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C2E1814E221007C35B3 /* Foundation.framework */; };
+		C56D4C311814E221007C35B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C301814E221007C35B3 /* CoreGraphics.framework */; };
+		C56D4C331814E221007C35B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C321814E221007C35B3 /* UIKit.framework */; };
+		C56D4C391814E221007C35B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C56D4C371814E221007C35B3 /* InfoPlist.strings */; };
+		C56D4C3B1814E221007C35B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4C3A1814E221007C35B3 /* main.m */; };
+		C56D4C3F1814E221007C35B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4C3E1814E221007C35B3 /* AppDelegate.m */; };
+		C56D4C421814E221007C35B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56D4C401814E221007C35B3 /* Main.storyboard */; };
+		C56D4C451814E221007C35B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4C441814E221007C35B3 /* ViewController.m */; };
+		C56D4C471814E221007C35B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56D4C461814E221007C35B3 /* Images.xcassets */; };
+		C56D4C4E1814E221007C35B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C4D1814E221007C35B3 /* XCTest.framework */; };
+		C56D4C4F1814E222007C35B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C2E1814E221007C35B3 /* Foundation.framework */; };
+		C56D4C501814E222007C35B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4C321814E221007C35B3 /* UIKit.framework */; };
+		C56D4C581814E222007C35B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C56D4C561814E222007C35B3 /* InfoPlist.strings */; };
+		C56D4C5A1814E222007C35B3 /* socketIOexampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4C591814E222007C35B3 /* socketIOexampleTests.m */; };
+		C56D4D0D1814E3AE007C35B3 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CE71814E3AE007C35B3 /* SBJsonParser.m */; };
+		C56D4D0E1814E3AE007C35B3 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CE91814E3AE007C35B3 /* SBJsonStreamParser.m */; };
+		C56D4D0F1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CEB1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.m */; };
+		C56D4D101814E3AE007C35B3 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CED1814E3AE007C35B3 /* SBJsonStreamParserAdapter.m */; };
+		C56D4D111814E3AE007C35B3 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CEF1814E3AE007C35B3 /* SBJsonStreamParserState.m */; };
+		C56D4D121814E3AE007C35B3 /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CF11814E3AE007C35B3 /* SBJsonStreamTokeniser.m */; };
+		C56D4D131814E3AE007C35B3 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CF31814E3AE007C35B3 /* SBJsonStreamWriter.m */; };
+		C56D4D141814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CF51814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.m */; };
+		C56D4D151814E3AE007C35B3 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CF71814E3AE007C35B3 /* SBJsonStreamWriterState.m */; };
+		C56D4D161814E3AE007C35B3 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CF91814E3AE007C35B3 /* SBJsonWriter.m */; };
+		C56D4D171814E3AE007C35B3 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CFB1814E3AE007C35B3 /* SocketIO.m */; };
+		C56D4D181814E3AE007C35B3 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CFD1814E3AE007C35B3 /* SocketIOJSONSerialization.m */; };
+		C56D4D191814E3AE007C35B3 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4CFF1814E3AE007C35B3 /* SocketIOPacket.m */; };
+		C56D4D1A1814E3AE007C35B3 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4D021814E3AE007C35B3 /* SocketIOTransportWebsocket.m */; };
+		C56D4D1B1814E3AE007C35B3 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4D041814E3AE007C35B3 /* SocketIOTransportXHR.m */; };
+		C56D4D1C1814E3AE007C35B3 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = C56D4D061814E3AE007C35B3 /* base64.c */; };
+		C56D4D1D1814E3AE007C35B3 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4D091814E3AE007C35B3 /* NSData+SRB64Additions.m */; };
+		C56D4D1E1814E3AE007C35B3 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D4D0C1814E3AE007C35B3 /* SRWebSocket.m */; };
+		C56D4D201814E3ED007C35B3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4D1F1814E3ED007C35B3 /* Security.framework */; };
+		C56D4D221814E3F5007C35B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4D211814E3F5007C35B3 /* SystemConfiguration.framework */; };
+		C56D4D241814E3FB007C35B3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4D231814E3FB007C35B3 /* MobileCoreServices.framework */; };
+		C56D4D261814E400007C35B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4D251814E3FF007C35B3 /* CFNetwork.framework */; };
+		C56D4D281814E41A007C35B3 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C56D4D271814E41A007C35B3 /* libicucore.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C56D4C511814E222007C35B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C56D4C231814E221007C35B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C56D4C2A1814E221007C35B3;
+			remoteInfo = socketIOexample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C56D4C2B1814E221007C35B3 /* socketIOexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socketIOexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56D4C2E1814E221007C35B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C56D4C301814E221007C35B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C56D4C321814E221007C35B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C56D4C361814E221007C35B3 /* socketIOexample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "socketIOexample-Info.plist"; sourceTree = "<group>"; };
+		C56D4C381814E221007C35B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C56D4C3A1814E221007C35B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C56D4C3C1814E221007C35B3 /* socketIOexample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "socketIOexample-Prefix.pch"; sourceTree = "<group>"; };
+		C56D4C3D1814E221007C35B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C56D4C3E1814E221007C35B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C56D4C411814E221007C35B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C56D4C431814E221007C35B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C56D4C441814E221007C35B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C56D4C461814E221007C35B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C56D4C4C1814E221007C35B3 /* socketIOexampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socketIOexampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56D4C4D1814E221007C35B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C56D4C551814E222007C35B3 /* socketIOexampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "socketIOexampleTests-Info.plist"; sourceTree = "<group>"; };
+		C56D4C571814E222007C35B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C56D4C591814E222007C35B3 /* socketIOexampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socketIOexampleTests.m; sourceTree = "<group>"; };
+		C56D4CE51814E3AE007C35B3 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		C56D4CE61814E3AE007C35B3 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C56D4CE71814E3AE007C35B3 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C56D4CE81814E3AE007C35B3 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		C56D4CE91814E3AE007C35B3 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		C56D4CEA1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		C56D4CEB1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		C56D4CEC1814E3AE007C35B3 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		C56D4CED1814E3AE007C35B3 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		C56D4CEE1814E3AE007C35B3 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		C56D4CEF1814E3AE007C35B3 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		C56D4CF01814E3AE007C35B3 /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		C56D4CF11814E3AE007C35B3 /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		C56D4CF21814E3AE007C35B3 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		C56D4CF31814E3AE007C35B3 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		C56D4CF41814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		C56D4CF51814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		C56D4CF61814E3AE007C35B3 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		C56D4CF71814E3AE007C35B3 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		C56D4CF81814E3AE007C35B3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C56D4CF91814E3AE007C35B3 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C56D4CFA1814E3AE007C35B3 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		C56D4CFB1814E3AE007C35B3 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		C56D4CFC1814E3AE007C35B3 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		C56D4CFD1814E3AE007C35B3 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		C56D4CFE1814E3AE007C35B3 /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		C56D4CFF1814E3AE007C35B3 /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		C56D4D001814E3AE007C35B3 /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		C56D4D011814E3AE007C35B3 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		C56D4D021814E3AE007C35B3 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		C56D4D031814E3AE007C35B3 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		C56D4D041814E3AE007C35B3 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		C56D4D061814E3AE007C35B3 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		C56D4D071814E3AE007C35B3 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		C56D4D081814E3AE007C35B3 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		C56D4D091814E3AE007C35B3 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		C56D4D0A1814E3AE007C35B3 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		C56D4D0B1814E3AE007C35B3 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		C56D4D0C1814E3AE007C35B3 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		C56D4D1F1814E3ED007C35B3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C56D4D211814E3F5007C35B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C56D4D231814E3FB007C35B3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C56D4D251814E3FF007C35B3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C56D4D271814E41A007C35B3 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C56D4C281814E221007C35B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4D281814E41A007C35B3 /* libicucore.dylib in Frameworks */,
+				C56D4D261814E400007C35B3 /* CFNetwork.framework in Frameworks */,
+				C56D4D241814E3FB007C35B3 /* MobileCoreServices.framework in Frameworks */,
+				C56D4D221814E3F5007C35B3 /* SystemConfiguration.framework in Frameworks */,
+				C56D4D201814E3ED007C35B3 /* Security.framework in Frameworks */,
+				C56D4C311814E221007C35B3 /* CoreGraphics.framework in Frameworks */,
+				C56D4C331814E221007C35B3 /* UIKit.framework in Frameworks */,
+				C56D4C2F1814E221007C35B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56D4C491814E221007C35B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4C4E1814E221007C35B3 /* XCTest.framework in Frameworks */,
+				C56D4C501814E222007C35B3 /* UIKit.framework in Frameworks */,
+				C56D4C4F1814E222007C35B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C56D4C221814E221007C35B3 = {
+			isa = PBXGroup;
+			children = (
+				C56D4C341814E221007C35B3 /* socketIOexample */,
+				C56D4C531814E222007C35B3 /* socketIOexampleTests */,
+				C56D4C2D1814E221007C35B3 /* Frameworks */,
+				C56D4C2C1814E221007C35B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C56D4C2C1814E221007C35B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4C2B1814E221007C35B3 /* socketIOexample.app */,
+				C56D4C4C1814E221007C35B3 /* socketIOexampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C56D4C2D1814E221007C35B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4D271814E41A007C35B3 /* libicucore.dylib */,
+				C56D4D251814E3FF007C35B3 /* CFNetwork.framework */,
+				C56D4D231814E3FB007C35B3 /* MobileCoreServices.framework */,
+				C56D4D211814E3F5007C35B3 /* SystemConfiguration.framework */,
+				C56D4D1F1814E3ED007C35B3 /* Security.framework */,
+				C56D4C2E1814E221007C35B3 /* Foundation.framework */,
+				C56D4C301814E221007C35B3 /* CoreGraphics.framework */,
+				C56D4C321814E221007C35B3 /* UIKit.framework */,
+				C56D4C4D1814E221007C35B3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C56D4C341814E221007C35B3 /* socketIOexample */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4CE31814E3AE007C35B3 /* socketio.objc */,
+				C56D4C3D1814E221007C35B3 /* AppDelegate.h */,
+				C56D4C3E1814E221007C35B3 /* AppDelegate.m */,
+				C56D4C401814E221007C35B3 /* Main.storyboard */,
+				C56D4C431814E221007C35B3 /* ViewController.h */,
+				C56D4C441814E221007C35B3 /* ViewController.m */,
+				C56D4C461814E221007C35B3 /* Images.xcassets */,
+				C56D4C351814E221007C35B3 /* Supporting Files */,
+			);
+			path = socketIOexample;
+			sourceTree = "<group>";
+		};
+		C56D4C351814E221007C35B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4C361814E221007C35B3 /* socketIOexample-Info.plist */,
+				C56D4C371814E221007C35B3 /* InfoPlist.strings */,
+				C56D4C3A1814E221007C35B3 /* main.m */,
+				C56D4C3C1814E221007C35B3 /* socketIOexample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C56D4C531814E222007C35B3 /* socketIOexampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4C591814E222007C35B3 /* socketIOexampleTests.m */,
+				C56D4C541814E222007C35B3 /* Supporting Files */,
+			);
+			path = socketIOexampleTests;
+			sourceTree = "<group>";
+		};
+		C56D4C541814E222007C35B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4C551814E222007C35B3 /* socketIOexampleTests-Info.plist */,
+				C56D4C561814E222007C35B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C56D4CE31814E3AE007C35B3 /* socketio.objc */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4CE41814E3AE007C35B3 /* JSON-Framework */,
+				C56D4CFA1814E3AE007C35B3 /* SocketIO.h */,
+				C56D4CFB1814E3AE007C35B3 /* SocketIO.m */,
+				C56D4CFC1814E3AE007C35B3 /* SocketIOJSONSerialization.h */,
+				C56D4CFD1814E3AE007C35B3 /* SocketIOJSONSerialization.m */,
+				C56D4CFE1814E3AE007C35B3 /* SocketIOPacket.h */,
+				C56D4CFF1814E3AE007C35B3 /* SocketIOPacket.m */,
+				C56D4D001814E3AE007C35B3 /* SocketIOTransport.h */,
+				C56D4D011814E3AE007C35B3 /* SocketIOTransportWebsocket.h */,
+				C56D4D021814E3AE007C35B3 /* SocketIOTransportWebsocket.m */,
+				C56D4D031814E3AE007C35B3 /* SocketIOTransportXHR.h */,
+				C56D4D041814E3AE007C35B3 /* SocketIOTransportXHR.m */,
+				C56D4D051814E3AE007C35B3 /* SocketRocket */,
+			);
+			path = socketio.objc;
+			sourceTree = SOURCE_ROOT;
+		};
+		C56D4CE41814E3AE007C35B3 /* JSON-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4CE51814E3AE007C35B3 /* SBJson.h */,
+				C56D4CE61814E3AE007C35B3 /* SBJsonParser.h */,
+				C56D4CE71814E3AE007C35B3 /* SBJsonParser.m */,
+				C56D4CE81814E3AE007C35B3 /* SBJsonStreamParser.h */,
+				C56D4CE91814E3AE007C35B3 /* SBJsonStreamParser.m */,
+				C56D4CEA1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.h */,
+				C56D4CEB1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.m */,
+				C56D4CEC1814E3AE007C35B3 /* SBJsonStreamParserAdapter.h */,
+				C56D4CED1814E3AE007C35B3 /* SBJsonStreamParserAdapter.m */,
+				C56D4CEE1814E3AE007C35B3 /* SBJsonStreamParserState.h */,
+				C56D4CEF1814E3AE007C35B3 /* SBJsonStreamParserState.m */,
+				C56D4CF01814E3AE007C35B3 /* SBJsonStreamTokeniser.h */,
+				C56D4CF11814E3AE007C35B3 /* SBJsonStreamTokeniser.m */,
+				C56D4CF21814E3AE007C35B3 /* SBJsonStreamWriter.h */,
+				C56D4CF31814E3AE007C35B3 /* SBJsonStreamWriter.m */,
+				C56D4CF41814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.h */,
+				C56D4CF51814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.m */,
+				C56D4CF61814E3AE007C35B3 /* SBJsonStreamWriterState.h */,
+				C56D4CF71814E3AE007C35B3 /* SBJsonStreamWriterState.m */,
+				C56D4CF81814E3AE007C35B3 /* SBJsonWriter.h */,
+				C56D4CF91814E3AE007C35B3 /* SBJsonWriter.m */,
+			);
+			path = "JSON-Framework";
+			sourceTree = "<group>";
+		};
+		C56D4D051814E3AE007C35B3 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				C56D4D061814E3AE007C35B3 /* base64.c */,
+				C56D4D071814E3AE007C35B3 /* base64.h */,
+				C56D4D081814E3AE007C35B3 /* NSData+SRB64Additions.h */,
+				C56D4D091814E3AE007C35B3 /* NSData+SRB64Additions.m */,
+				C56D4D0A1814E3AE007C35B3 /* SocketRocket-Prefix.pch */,
+				C56D4D0B1814E3AE007C35B3 /* SRWebSocket.h */,
+				C56D4D0C1814E3AE007C35B3 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C56D4C2A1814E221007C35B3 /* socketIOexample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56D4C5D1814E222007C35B3 /* Build configuration list for PBXNativeTarget "socketIOexample" */;
+			buildPhases = (
+				C56D4C271814E221007C35B3 /* Sources */,
+				C56D4C281814E221007C35B3 /* Frameworks */,
+				C56D4C291814E221007C35B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = socketIOexample;
+			productName = socketIOexample;
+			productReference = C56D4C2B1814E221007C35B3 /* socketIOexample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C56D4C4B1814E221007C35B3 /* socketIOexampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56D4C601814E222007C35B3 /* Build configuration list for PBXNativeTarget "socketIOexampleTests" */;
+			buildPhases = (
+				C56D4C481814E221007C35B3 /* Sources */,
+				C56D4C491814E221007C35B3 /* Frameworks */,
+				C56D4C4A1814E221007C35B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C56D4C521814E222007C35B3 /* PBXTargetDependency */,
+			);
+			name = socketIOexampleTests;
+			productName = socketIOexampleTests;
+			productReference = C56D4C4C1814E221007C35B3 /* socketIOexampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C56D4C231814E221007C35B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = saturngod;
+				TargetAttributes = {
+					C56D4C4B1814E221007C35B3 = {
+						TestTargetID = C56D4C2A1814E221007C35B3;
+					};
+				};
+			};
+			buildConfigurationList = C56D4C261814E221007C35B3 /* Build configuration list for PBXProject "socketIOexample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56D4C221814E221007C35B3;
+			productRefGroup = C56D4C2C1814E221007C35B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C56D4C2A1814E221007C35B3 /* socketIOexample */,
+				C56D4C4B1814E221007C35B3 /* socketIOexampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C56D4C291814E221007C35B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4C471814E221007C35B3 /* Images.xcassets in Resources */,
+				C56D4C391814E221007C35B3 /* InfoPlist.strings in Resources */,
+				C56D4C421814E221007C35B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56D4C4A1814E221007C35B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4C581814E222007C35B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C56D4C271814E221007C35B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4D1D1814E3AE007C35B3 /* NSData+SRB64Additions.m in Sources */,
+				C56D4C451814E221007C35B3 /* ViewController.m in Sources */,
+				C56D4D161814E3AE007C35B3 /* SBJsonWriter.m in Sources */,
+				C56D4D181814E3AE007C35B3 /* SocketIOJSONSerialization.m in Sources */,
+				C56D4D101814E3AE007C35B3 /* SBJsonStreamParserAdapter.m in Sources */,
+				C56D4D191814E3AE007C35B3 /* SocketIOPacket.m in Sources */,
+				C56D4D0D1814E3AE007C35B3 /* SBJsonParser.m in Sources */,
+				C56D4D1C1814E3AE007C35B3 /* base64.c in Sources */,
+				C56D4D171814E3AE007C35B3 /* SocketIO.m in Sources */,
+				C56D4D131814E3AE007C35B3 /* SBJsonStreamWriter.m in Sources */,
+				C56D4D121814E3AE007C35B3 /* SBJsonStreamTokeniser.m in Sources */,
+				C56D4D0F1814E3AE007C35B3 /* SBJsonStreamParserAccumulator.m in Sources */,
+				C56D4C3F1814E221007C35B3 /* AppDelegate.m in Sources */,
+				C56D4D111814E3AE007C35B3 /* SBJsonStreamParserState.m in Sources */,
+				C56D4D141814E3AE007C35B3 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C56D4D151814E3AE007C35B3 /* SBJsonStreamWriterState.m in Sources */,
+				C56D4C3B1814E221007C35B3 /* main.m in Sources */,
+				C56D4D0E1814E3AE007C35B3 /* SBJsonStreamParser.m in Sources */,
+				C56D4D1E1814E3AE007C35B3 /* SRWebSocket.m in Sources */,
+				C56D4D1A1814E3AE007C35B3 /* SocketIOTransportWebsocket.m in Sources */,
+				C56D4D1B1814E3AE007C35B3 /* SocketIOTransportXHR.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56D4C481814E221007C35B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56D4C5A1814E222007C35B3 /* socketIOexampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C56D4C521814E222007C35B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C56D4C2A1814E221007C35B3 /* socketIOexample */;
+			targetProxy = C56D4C511814E222007C35B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C56D4C371814E221007C35B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56D4C381814E221007C35B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C56D4C401814E221007C35B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56D4C411814E221007C35B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C56D4C561814E222007C35B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56D4C571814E222007C35B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C56D4C5B1814E222007C35B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C56D4C5C1814E222007C35B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C56D4C5E1814E222007C35B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketIOexample/socketIOexample-Prefix.pch";
+				INFOPLIST_FILE = "socketIOexample/socketIOexample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C56D4C5F1814E222007C35B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketIOexample/socketIOexample-Prefix.pch";
+				INFOPLIST_FILE = "socketIOexample/socketIOexample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C56D4C611814E222007C35B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/socketIOexample.app/socketIOexample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketIOexample/socketIOexample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "socketIOexampleTests/socketIOexampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C56D4C621814E222007C35B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/socketIOexample.app/socketIOexample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketIOexample/socketIOexample-Prefix.pch";
+				INFOPLIST_FILE = "socketIOexampleTests/socketIOexampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C56D4C261814E221007C35B3 /* Build configuration list for PBXProject "socketIOexample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56D4C5B1814E222007C35B3 /* Debug */,
+				C56D4C5C1814E222007C35B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56D4C5D1814E222007C35B3 /* Build configuration list for PBXNativeTarget "socketIOexample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56D4C5E1814E222007C35B3 /* Debug */,
+				C56D4C5F1814E222007C35B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56D4C601814E222007C35B3 /* Build configuration list for PBXNativeTarget "socketIOexampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56D4C611814E222007C35B3 /* Debug */,
+				C56D4C621814E222007C35B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56D4C231814E221007C35B3 /* Project object */;
+}

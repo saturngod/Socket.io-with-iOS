@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Geeks Chat App</title>
+  <script src="/js/jquery-1.10.1.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container chat-body">
+      <div class="row chatroom bordered">
+        <div class="col-md-3">Geeks in Chat</div>
+        <div class="col-md-9 chatarea">
+          <ul id="chatbox">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+
+
+  <div class="footer">
+    <div class="container">
+      <form id="chat_form">
+        <textarea id="chat_input"></textarea>
+        <button  class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var socket = io.connect("192.168.1.10:3000");
+
+      socket.on('connect', function(){
+        var nickname;
+        while(!nickname){
+          nickname = prompt("what is your nickname?");
+          socket.emit('join', nickname);
+        }
+      });
+
+      socket.on('message', function(data){
+        insertMessage(data.message, data.nickname);
+      });
+
+
+
+      $('#chat_input').keypress(function(e){
+        if(e.keyCode == 13 && !e.shiftKey) {
+         e.preventDefault();
+         formSubmit();
+        }
+      });
+
+      var formSubmit = function(){
+        var chatInput = $('#chat_input');
+        var message = chatInput.val();
+        chatInput.val("");
+        insertMessage(message);
+        socket.emit('message', message);
+      }
+
+      $('#chat_form').on('submit', function(e){
+        e.preventDefault();
+        formSubmit();
+      });
+
+
+
+      //this method does not prevent XSS!!
+      var insertMessage = function(message, name){
+        var li;
+        if (name){
+          li = '<li class="message"><span class="name">' + name + ':</span><br />' + message + '</li>'
+        }else{
+          li = '<li class="message self">' + message + '</li>'
+        }
+        $('#chatbox').append(li);
+      }
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+html, body, .chat-body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 100px; /* .push must be the same height as .footer */
+  clear: both;
+}
+
+.bordered{
+  border: 1px solid #000;
+}
+
+.chatroom{
+  min-height: 100%;
+}
+
+ul#chatbox{
+  list-style: none;
+}
+
+ul#chatbox li.message{
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+  min-height: 30px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+
+ul#chatbox li.message .name{
+  font-style: italic;
+  border-bottom: 1px dotted #000;
+}
+
+ul#chatbox li.self{
+  text-align: right;
+  background-color: blue;
+}
+
+#chat_form{
+  position: fixed;
+  bottom: 0px;
+  width:90%;
+}
+
+#chat_input{
+  width:90%;
+}
